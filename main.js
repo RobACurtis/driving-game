@@ -5,16 +5,23 @@ var $car = document.querySelector('#car');
 
 window.addEventListener('keydown', turnCar);
 
-var i = 0;
-var car = carData.position;
-
 function turnCar(event) {
   var key = event.keyCode;
   if (key === 39) {
-    i++;
-    $car.className = car[i];
-  } else if (key === 37) {
-    i--;
-    $car.className = car[i];
+    $car.className = 'east';
+    carData.property = 'east';
+
+  }
+  if (key === 37) {
+    $car.className = 'west';
+    carData.property = 'west';
+  }
+  if (key === 38) {
+    $car.className = 'north';
+    carData.property = 'north';
+  }
+  if (key === 40) {
+    $car.className = 'south';
+    carData.property = 'south';
   }
 }
