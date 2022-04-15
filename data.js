@@ -1,5 +1,5 @@
 /* exported carData */
 
 var carData = {
-  position: 'east'
+  position: ['east', 'south', 'west', 'north']
 };
