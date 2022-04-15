@@ -2,11 +2,31 @@ body {
   background-color: green;
 }
 
+.container {
+  position: relative;
+}
+
 #car {
   width: 130px;
   position: absolute;
+  transition: 0.5s;
 }
 
-.container {
-  position: relative;
+.east {
+  transition: 0.5s;
+}
+
+.south {
+  transform: rotate(90deg);
+  transition: 0.5s;
+}
+
+.west {
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+
+.north {
+  transform: rotate(270deg);
+  transition: 0.5s;
 }
