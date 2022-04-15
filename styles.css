@@ -1,0 +1,12 @@
+body {
+  background-color: green;
+}
+
+#car {
+  width: 130px;
+  position: absolute;
+}
+
+.container {
+  position: relative;
+}
