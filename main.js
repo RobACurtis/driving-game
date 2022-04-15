@@ -10,7 +10,6 @@ function turnCar(event) {
   if (key === 39) {
     $car.className = 'east';
     carData.property = 'east';
-
   }
   if (key === 37) {
     $car.className = 'west';
